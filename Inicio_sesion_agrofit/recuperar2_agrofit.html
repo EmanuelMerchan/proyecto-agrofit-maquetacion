@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/styles-inicio.css">
+
+        <title> AgroFit </title>
+    </head>
+
+    <body>
+
+        <div class="verificar-container">
+            <!-- imagen de seguridad -->
+            <div class="verificar-imagen">
+                <img class="imagen-candado" src="../img/verificar_codigo.jpg" alt="Candado">
+            </div>
+
+            <!-- Título -->
+            <h1 class="verificar-title">Verificar Identidad</h1>
+            <p class="verificar-mensaje">
+                Hemos enviado un código de 6 dígitos a tu correo institucional <span class="verificar-mensaje-subtitle" > @sena.edu.co </span>
+            </p>
+
+            <!-- Campos para el código -->
+            <form class="verificar-form" action="recuperar3_agorfit.html">
+                <div class="codigo-inputs">
+                    <input class="codigo-inputs-numero" type="text" maxlength="1" required>
+                    <input class="codigo-inputs-numero" type="text" maxlength="1" required>
+                    <input class="codigo-inputs-numero" type="text" maxlength="1" required>
+                    <input class="codigo-inputs-numero" type="text" maxlength="1" required>
+                    <input class="codigo-inputs-numero" type="text" maxlength="1" required>
+                    <input class="codigo-inputs-numero" type="text" maxlength="1" required>
+                </div>
+
+                <!-- Botón -->
+                <button type="submit" class="btn-verificar">
+                    <i class="fa-solid fa-arrow-right"></i> Verificar 
+                </button>
+            </form> 
+
+            <!-- Links -->
+            <div class="verificar-links">
+                <a class="link-reenviar-codigo" href="#">Reenviar código</a>
+                <a class="link-voler-r1 " href="recuperar1_agrofit.html">Volver al paso anterior</a>
+            </div>
+        </div>
+
+    </body>
+
+</html>

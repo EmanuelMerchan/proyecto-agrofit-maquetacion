@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles-inicio.css">
+    <script src="../js/registrar-rol.js" defer> </script>
+
+    <title> AgroFit </title>
+</head>
+
+<body>
+    <div class="registrar-container">
+        <!-- Sección izquierda con fondo -->
+        <div class="registrar-left">
+            <h1 class="registrar-title">AgroFit</h1>
+            <p class="registrar-subtitle">Únete al sistema de gestión del progreso</p>
+        </div>
+
+        <!-- Sección derecha con formulario -->
+        <div class="registrar-right">
+            <form class="registrar-form">
+
+                <!-- Información Personal -->
+                <div class="resgistrar-title">
+                    <h2 class="section-title">Información Personal</h2>
+                </div>
+                <hr>
+                <!-- Requisitos -->
+                <div class="registrar-section">
+
+                    <div class="registrar-requisitos">
+                        <i class="icono-registro fa-regular fa-circle-user"></i>
+                        <label class="requisito-text" for="nombres">Nombres</label>
+                        <input class="registrar-input" type="text" id="nombres" name="nombres" placeholder="Tus nombres"
+                            required>
+                    </div>
+
+                    <div class="registrar-requisitos">
+                        <i class="icono-registro fa-regular fa-pen-to-square"></i>
+                        <label class="requisito-text" for="apellidos">Apellidos</label>
+                        <input class="registrar-input" type="text" id="apellidos" name="apellidos"
+                            placeholder="Tus apellidos" required>
+                    </div>
+
+                    <div class="registrar-requisitos">
+                        <i class="icono-registro fa-regular fa-file"></i>
+                        <label class="requisito-text" for="tipo-doc">Tipo de Documento</label>
+                        <select class="registrar-input" id="tipo-doc" name="tipo-doc" required>
+                            <option value="">Seleccionar...</option>
+                            <option value="cc">Cédula de Ciudadanía</option>
+                            <option value="ti">Tarjeta de Identidad</option>
+                            <option value="ce">Cédula de Extranjería</option>
+                        </select>
+                    </div>
+
+                    <div class="registrar-requisitos">
+                        <i class="icono-registro fa-regular fa-clipboard"></i>
+                        <label class="requisito-text" for="num-doc">Número de Documento</label>
+                        <input class="registrar-input " type="text" id="num-doc" name="num-doc" placeholder="123456789" required>
+                    </div>
+
+                    <div class="registrar-requisitos">
+                        <i class="icono-registro fa-solid fa-phone"></i> 
+                        <label class="requisito-text" for="num-telefono">Número de Telefono</label>
+                        <input class="registrar-input " type="text" id="num-telefono" name="num-telefono" placeholder="3123456789" required>
+                    </div>
+
+                    <div class="registrar-requisitos">
+                        <i class="icono-registro fa-regular fa-calendar"></i> 
+                        <label class="requisito-text" for="fecha-nacimiento">Fecha de nacimiento</label>
+                        <input class="registrar-input " type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                    </div>
+
+                    <div class="registrar-requisitos">
+                        <i class="icono-registro fa-solid fa-ruler-vertical"></i> 
+                        <label class="requisito-text" for="altura-usu">Altura (cm) </label>
+                        <input class="registrar-input " type="text" id="altura-usu" name="altura-usu" placeholder="170 cm" required>
+                    </div>
+
+                    <div class="registrar-requisitos">
+                        <i class="icono-registro fa-solid fa-weight-hanging"></i>
+                        <label class="requisito-text" for="peso-usu">Peso (kg) </label>
+                        <input class="registrar-input " type="text" id="peso-usu" name="peso-usu" placeholder="70 kg" required>
+                    </div>
+
+
+
+                </div>
+
+                <!-- Perfil -->
+                <div class="registrar-rol">
+
+                    <h2 class="section-title">Perfil</h2>
+                    <hr>
+
+                    <p class="section-subtitle">Rol en el Sistema:</p>
+                    <!-- Botones de rol -->
+                    <div class="roles-container">
+                        <button type="button" class="roles-btn">
+                            <span class="fa-regular fa-hand-back-fist"></span> Entrenador
+                        </button>
+                        <button type="button" class="roles-btn">
+                            <span class="fa-solid fa-briefcase"></span> Funcionario
+                        </button>
+                        <button type="button" class="roles-btn">
+                            <span class="fa-solid fa-graduation-cap"></span> Aprendiz
+                        </button>
+                    </div>
+
+                    <!-- Campos dinamicos -->
+                    <div class="hidden dynamic-fields" id="dynamicFields">
+
+                        <!-- Dependencia -->
+                        <div class="hidden dependencia-field" id="dependenciaField">
+
+                            <label>Dependencia</label>
+                            <input type="text" placeholder="Ej. Área de Deportes">
+
+                            <label>Centro de Formacion</label>
+                            <input type="text" placeholder="Ej. Agropecuario, CTPI">
+                            
+                        </div>
+
+                        <!-- Campos para Entrenador-Funcionario -->
+                        <div class="hidden staff-fields" id="staffFields">
+                            <div>
+
+                                <label>Tipo de Vinculación</label>
+                                <select id="vinculacionSelect">
+                                    <option value="">Seleccionar...</option>
+                                    <option value="planta">De Planta</option>
+                                    <option value="contrato">Por Contrato</option>
+                                </select>
+                                
+                            </div>
+
+                            <!-- Detalles de contrato -->
+                            <div class="hidden contract-details" id="contractDetails">
+                                <div>
+                                    <label>Fecha Inicio</label>
+                                    <input type="date">
+                                </div>
+                                <div>
+                                    <label>Fecha Fin</label>
+                                    <input type="date">
+                                </div>
+                                <div>
+                                    <label>Número de Contrato</label>
+                                    <input type="text" placeholder="Ej. 123-2024">
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <!-- Campos para Aprendiz -->
+                        <div class="hidden apprentice-fields" id="apprenticeFields">
+                            <label>Número de Ficha</label>
+                            <input type="text" placeholder="Ej. 2550011">
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Credenciales -->
+                <div class="registrar-credenciales">
+
+                    <h2 class="section-title">Credenciales</h2>
+                    <hr>
+
+                    <div class="credenciales-datos">
+                        <i class="fa-regular fa-envelope"></i>
+                        <label class="credencial-dato" for="correo">Correo Institucional (SENA):</label>
+
+                    </div>
+                    <input class="registrar-input" type="email" id="correo" name="correo" placeholder="usuario@sena.edu.co" required>
+                    
+                    <div class="credenciales-datos-clave">
+                        <i class="fa-solid fa-key"></i>
+                        <label class="credenciale-dato-clave" for="password">Contraseña:</label>
+
+                        <i class="confimar-clave-icon fa-solid fa-lock"></i>
+                        <label class="credenciale-dato-clave credenciale-dato-clave-confirm" for="confirm-password"> Confirmar Contraseña: </label>
+                    </div>
+
+                    <div class="credenciales-datos-clave-confirm">
+                        <input class="registrar-input" type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                        <input class="registrar-input registrar-input-confimar" type="password" id="confirm-password" name="confirm-password" placeholder="Confirma tu contraseña" required>
+                    </div>
+
+                </div>
+            </form>
+
+            <!-- Botones -->
+            <form action="inicio_agrofit.html">
+                <div class="registrar-buttons">
+                    <a href="inicio_agrofit.html" class="btn-secondary">Ya tengo cuenta</a>
+                    <button type="submit" class="btn-primary">Registrar Usuario</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/styles-inicio.css">
+
+        <title> AgroFit </title>
+    </head>
+
+    <body>
+
+        <div class="password-container">
+            
+            <!-- Título -->
+            <h1 class="password-title">Nueva Contraseña</h1>
+            <p class="password-subtitle">
+                Crea una contraseña segura que no hayas usado anteriormente
+            </p>
+
+            <!-- Formulario -->
+            <form class="password-form" action="inicio_agrofit.html" method="post">
+
+                <!-- Campo nueva contraseña -->
+                <div class="password-field">
+                    <label class="password-field-subtitle" for="nueva">Nueva Contraseña</label>
+                    <input class="password-field-input" type="password" id="nueva" name="nueva" placeholder="Ingresa tu nueva contraseña" required>
+                </div>
+
+                <!-- Campo confirmar contraseña -->
+                <div class="password-field">
+                    <label class="password-field-subtitle" for="confirmar">Confirmar Contraseña</label>
+                    <input class="password-field-input" type="password" id="confirmar" name="confirmar" placeholder="Confirma tu nueva contraseña" required>
+                </div>
+
+                <!-- Requisitos -->
+                <div class="password-requisitos">
+                    <h2 class="password-requisitos-title">Requisitos de seguridad</h2>
+                    <ul class="password-requisitos-list">
+                        <li>Mínimo 8 caracteres</li>
+                        <li>Al menos un número</li>
+                        <li>Al menos un símbolo (ej. @, #, $)</li>
+                    </ul>
+                </div>
+                
+                <!-- Botón -->
+                <button type="submit" class="btn-password">Actualizar Contraseña</button> <hr>
+            </form>
+
+            <!-- Link volver -->
+            <div class="password-links">
+                <a class="link-voler-ini" href="inicio_agrofit.html">Volver al inicio de sesión</a>
+            </div>
+        </div>
+    </body>
+
+</html>

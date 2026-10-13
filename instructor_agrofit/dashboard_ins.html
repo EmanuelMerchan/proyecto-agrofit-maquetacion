@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles-ins.css">
+
+    <title>Agrofit</title>
+
+</head>
+
+<body>
+    <div class="layout">
+
+        <aside class="layout-aside">
+            <section class="layaut-content-menu">
+                <div class="content-menu-logo">
+                    <img class="logo-img" src="../img/agrofit-logo.png" alt="logo Agrofit">
+                </div>
+
+                <nav class="layaut-menu">
+                    <ul class="menu-list">
+
+                        <li class="menu-option">
+                            <a href="dashboard_ins.html" class="menu-link menu-link--active">
+                                <i class=" menu-icon fa-regular fa-chart-bar "></i>
+                                <span class="menu-overlay"> Dashboard </span>
+                            </a>
+                        </li>
+
+                        <li class="menu-option">
+                            <a href="rutinas_ins.html" class="menu-link ">
+                                <i class=" menu-icon fa-solid fa-dumbbell"></i>
+                                <span class="menu-overlay"> Rutinas </span>
+                            </a>
+                        </li>
+
+                        <li class="menu-option">
+                            <a href="maquinas_ins.html" class="menu-link ">
+                                <i class=" menu-icon fa-solid fa-gears"></i>
+                                <span class="menu-overlay"> Maquinas </span>
+                            </a>
+                        </li>
+
+                        <li class="menu-option">
+                            <a href="usuarios_ins.html" class="menu-link ">
+                                <i class=" menu-icon fa-solid fa-user-group"></i>
+                                <span class="menu-overlay"> Usuarios </span>
+                            </a>
+                        </li>
+
+                        <li class="menu-option">
+                            <hr class="linea-cerrar">
+                            <a href="#" class="menu-link-cerrar ">
+                                <i class=" menu-icon fa-solid fa-right-from-bracket"></i>
+                                <span class="menu-overlay"> Cerrar Sesión </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </section>
+        </aside>
+
+        <!-- perfil -->
+        <main class="layaut-contaiener">
+            <header class="top-perfil">
+                <h1 class="perfil-title">Resumen General</h1>
+                <div class="perfil-info">
+                    <div class="perfil-ins">
+                        <img src="../img/instructor.jpg" alt="Foto Instructor" class="perfil-img">
+                        <h5 class="perfil-rol">Instructor Gym</h5>
+                    </div>
+                    <h6 class="perfil-nombre">Cesar Paz</h6>
+                </div>
+            </header>
+
+            <!-- Contenido Principal -->
+            <!-- Cajitas de resumen -->
+            <section class="resumen">
+
+                <div class="resumen-card">
+                    <i class="card-icon fa-solid fa-users"></i>
+                    <h3 class="card-title">Usuarios Activos</h3>
+                    <p class="card-number">450</p>
+                </div>
+
+                <div class="resumen-card">
+                    <i class="card-icon fa-solid fa-dumbbell"></i>
+                    <h3 class="card-title">Rutinas Asignadas</h3>
+                    <p class="card-number">120</p>
+                </div>
+
+                <div class="resumen-card">
+                    <i class="card-icon fa-solid fa-arrow-trend-up"></i>
+                    <h3 class="card-title">Cumplimiento Promedio</h3>
+                    <p class="card-number">82%</p>
+                </div>
+                
+            </section>
+
+            <!-- Resumen semanal -->
+            <section class="resumen-semanal">
+                <h2 class="r-semanal-title">Reportes</h2>
+                <p class="r-semanal-text">Reportes generales.</p>
+                <button class="btn-ver">Crear reporte</button>
+            </section>
+
+            <!-- Actividad reciente -->
+            <section class="actividad">
+                <h2 class="actividad-title">Actividad Reciente</h2>
+                <ul class="actividad-card">
+                    <li class="actividad-card-descrip">Juan Pérez registró progreso en piernas hace 15 minutos</li>
+                    <li class="actividad-card-descrip">María Rojas asignó la rutina "Hipertrofia Avanzada" hace 2 horas</li>
+                    <li class="actividad-card-descrip">Carlos López se registró como nuevo usuario hace 5 horas</li>
+                </ul>
+            </section>
+            
+        </main>
+    </div>
+</body>
+
+</html>

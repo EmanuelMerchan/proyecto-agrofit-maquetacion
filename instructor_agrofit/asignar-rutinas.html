@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles-ins.css">
+    <title>Agrofit</title>
+</head>
+
+<body>
+    <!-- Botón volver -->
+    <div class="volver-asignar-rutina">
+        <a href="usuarios_ins.html" class="btn-asignar-rutina">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+    </div>
+
+    <main class="asignar-rutina-container">
+    <h1 class="asignar-titulo">
+        <i class="fa-solid fa-user-check"></i> Nueva Asignación
+    </h1>
+
+    <div class="asignar-layout">
+        <section class="asignar-card aprendiz-card">
+            
+            
+
+            <div class="aprendiz-info-card">
+                <div class="aprendiz-main">
+                    <img src="../img/instructor.jpg" alt="Foto del aprendiz" class="aprendiz-foto">
+                    <div class="aprendiz-detalles">
+                        <h3 class="aprendiz-detalles-title" >Carlos Mendoza</h3>
+                        <p class="aprendiz-detalles-info">Ficha: 2548901 • Nivel: Intermedio</p>
+                    </div>
+                    <button class="btn-close-aprendiz"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+
+                <div class="aprendiz-extra">
+                    <div class="aprendiz-box">
+                        <span class="aprendiz-box-label">ÚLTIMA EVALUACIÓN</span>
+                        <span class="aprendiz-box-value">Hace 2 días</span>
+                    </div>
+                    <div class="aprendiz-box">
+                        <span class="aprendiz-box-label">OBJETIVO ACTUAL</span>
+                        <span class="aprendiz-box-value">Hipertrofia</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="asignar-card confirmar-card">
+            <h2 class="asignar-card-title" >Confirmar Asignación</h2>
+            <p class="confirmar-subtext">Revisa que la rutina seleccionada corresponda al nivel y objetivo del aprendiz antes de guardar.</p>
+            
+            <div class="form-group-confirm">
+                <label class="form-group-confirm-label" for="duracion">DURACIÓN TOTAL DE LA SESIÓN (DÍAS)</label>
+                <div class="input-with-icon">
+                    <i class="icon-input fa-regular fa-clock"></i>
+                    <input class="input-with-input form-group-confirm-input"  type="number" id="duracion" placeholder="Ej: 60" value="35">
+                </div>
+            </div>
+
+            <div class="rutina-seleccionada-box">
+                <i class="fa-regular fa-circle-check"></i>
+                <span><strong>Rutina seleccionada:</strong> Fuerza Base II</span>
+            </div>
+            
+            <form action="usuarios_ins.html">
+                <button class="btn-confirmar-asignacion">
+                    <i class="fa-solid fa-square-check"></i> Asignar Rutina
+                </button>
+            </form>
+            
+        </div>
+
+        <section class="asignar-card rutina-card">
+            <h2 class="asignar-card-title">2. Seleccionar Rutina</h2>
+
+            <div class="filtros">
+                <button class="filtro-btn">Todos</button>
+                <button class="filtro-btn">Hipertrofia</button>
+                <button class="filtro-btn">Fuerza</button>
+                <button class="filtro-btn">Resistencia</button>
+            </div>
+
+            <div class="rutina-lista">
+                <div class="rutina-item rutina-item-seleccionada">
+                    <div class="rutina-header">
+                        <div class="rutina-title-group">
+                            <div class="rutina-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                            <h3 class="rutina-item-title"> Fuerza Base II</h3>
+                        </div>
+                        <div class="radio-check radio-check-checked"><i class="fa-solid fa-circle-dot"></i></div>
+                    </div>
+                    <p class="rutina-item-text">Enfoque en ejercicios compuestos (Sentadilla, Peso Muerto, Press Banca) para desarrollo de fuerza general.</p>
+                    <div class="rutina-badges">
+                        <span class="badge">INTERMEDIO</span>
+                        <span class="badge">4 DÍAS/SEMANA</span>
+                        <span class="badge">6 SEMANAS</span>
+                    </div>
+                </div>
+
+                <div class="rutina-item">
+                    <div class="rutina-header">
+                        <div class="rutina-title-group">
+                            <div class="rutina-icon"><i class="fa-solid fa-child-reaching"></i></div>
+                            <h3 class="rutina-item-title">Hipertrofia Tronco Superior</h3>
+                        </div>
+                        <div class="radio-check"><i class="fa-regular fa-circle"></i></div>
+                    </div>
+                    <p class="rutina-item-text">Aislamiento muscular enfocado en pecho, espalda, hombros y brazos. Alto volumen de repeticiones.</p>
+                    <div class="rutina-badges">
+                        <span class="badge">AVANZADO</span>
+                        <span class="badge">3 DÍAS/SEMANA</span>
+                    </div>
+                </div>
+
+                <div class="rutina-item">
+                    <div class="rutina-header">
+                        <div class="rutina-title-group">
+                            <div class="rutina-icon"><i class="fa-solid fa-person-running"></i></div>
+                            <h3 class="rutina-item-title">Acondicionamiento HIIT</h3>
+                        </div>
+                        <div class="radio-check"><i class="fa-regular fa-circle"></i></div>
+                    </div>
+                    <p class="rutina-item-text">Circuitos metabólicos de alta intensidad para mejora cardiovascular y resistencia muscular.</p>
+                    <div class="rutina-badges">
+                        <span class="badge">PRINCIPIANTE</span>
+                        <span class="badge">2 DÍAS/SEMANA</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+</body>
+
+</html>

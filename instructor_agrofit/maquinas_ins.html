@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles-ins.css">
+
+    <title>Agrofit</title>
+
+</head>
+
+<body>
+    <div class="layout">
+
+        <aside class="layout-aside">
+            <section class="layaut-content-menu">
+                <div class="content-menu-logo">
+                    <img class="logo-img" src="../img/agrofit-logo.png" alt="logo Agrofit">
+                </div>
+
+                <nav class="layaut-menu">
+                    <ul class="menu-list">
+
+                        <li class="menu-option">
+                            <a href="dashboard_ins.html" class="menu-link ">
+                                <i class=" menu-icon fa-regular fa-chart-bar "></i>
+                                <span class="menu-overlay"> Dashboard </span>
+                            </a>
+                        </li>
+
+                        <li class="menu-option">
+                            <a href="rutinas_ins.html" class="menu-link">
+                                <i class=" menu-icon fa-solid fa-dumbbell"></i>
+                                <span class="menu-overlay"> Rutinas </span>
+                            </a>
+                        </li>
+
+                        <li class="menu-option">
+                            <a href="maquinas_ins.html" class="menu-link menu-link--active">
+                                <i class=" menu-icon fa-solid fa-gears"></i>
+                                <span class="menu-overlay"> Maquinas </span>
+                            </a>
+                        </li>
+
+                        <li class="menu-option">
+                            <a href="usuarios_ins.html" class="menu-link ">
+                                <i class=" menu-icon fa-solid fa-user-group"></i>
+                                <span class="menu-overlay"> Usuarios </span>
+                            </a>
+                        </li>
+
+                        <li class="menu-option">
+                            <hr class="linea-cerrar">
+                            <a href="#" class="menu-link-cerrar ">
+                                <i class=" menu-icon fa-solid fa-right-from-bracket"></i>
+                                <span class="menu-overlay"> Cerrar Sesión </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </section>
+        </aside>
+
+        <!-- perfil -->
+        <main class="layaut-contaiener">
+            <header class="top-perfil">
+                <h1 class="perfil-title">Gestion De Maquinas</h1>
+                <div class="perfil-info">
+                    <div class="perfil-ins">
+                        <img src="../img/instructor.jpg" alt="Foto Instructor" class="perfil-img">
+                        <h5 class="perfil-rol">Instructor Gym</h5>
+                    </div>
+                    <h6 class="perfil-nombre">Cesar Paz</h6>
+                </div>
+            </header>
+
+            <!-- Contenido Principal -->
+            <!-- Indicadores superiores -->
+            <form action="nueva-maquina.html">
+                <button class="btn-nueva">
+                    <i class="icon-plus fa-solid fa-plus"></i> Nueva Máquina
+                </button>
+            </form>
+           
+            <div class="maquinas-stats">
+
+                <div class="stat-item ">
+                    <div class="icon-circulo-total"> 
+                        <i class="icon-total fa-solid fa-dumbbell"></i>
+                    </div>
+                    <span class="stat-label">Total equipos:</span>
+                    <span class="stat-value">42</span>
+                </div>
+
+                <div class="stat-item">
+                    <div class="icon-circulo-matenimiento"> 
+                        <i class="icon-mantenimiento fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <span class="stat-label">En mantenimiento:</span>
+                    <span class="stat-value">3</span>
+                </div>
+
+                <div class="stat-item ">
+                    <div class="icon-circulo-fuera">
+                        <i class="icon-fuera-servicio fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <span class="stat-label">Fuera de servicio:</span>
+                    <span class="stat-value">1</span>
+                </div>
+                
+            </div>
+
+            <!-- Tabla de máquinas -->
+            <table class="maquinas-table">
+                
+                <tr class="maquinas-row-head">
+
+                    <th class="maquinas-th"><i class="icon-th fa-solid fa-dumbbell"></i> Máquina / Equipo</th>
+                    <th class="maquinas-th"><i class="icon-th fa-solid fa-align-left"></i> Descripción</th>
+                    <th class="maquinas-th"><i class="icon-th fa-solid fa-circle-info"></i> Estado</th>
+                    <th class="maquinas-th"><i class="icon-th fa-solid fa-calendar-check"></i> Último mantenimiento
+                    </th>
+                    <th class="maquinas-th"><i class="icon-th fa-solid fa-gear"></i> Acciones</th>
+                    
+                </tr>
+            
+            
+                <tr class="maquinas-row">
+
+                    <td class="maquinas-td">Prensa de Piernas (MQ-001)</td>
+                    <td class="maquinas-td">Equipo para fortalecimiento de tren inferior...</td>
+                    <td class="maquinas-td"> Disponible</td>
+                    <td class="maquinas-td">12 Oct 2023</td>
+                    <form action="editar-maquina.html">
+                        <td class="maquinas-td">
+                            <button class="btn-accion"><i class="icon-edit fa-solid fa-pen"></i></button>
+                        </td>
+                    </form>
+                    
+
+                </tr>
+                
+                <tr class="maquinas-row">
+
+                    <td class="maquinas-td">Cinta de Correr Pro 9000 (MQ-014)</td>
+                    <td class="maquinas-td">Motor de 3.0 HP para cardio intenso...</td>
+                    <td class="maquinas-td">En Mantenimiento</td>
+                    <td class="maquinas-td">01 Nov 2023</td>
+                    <td class="maquinas-td">
+                        <button class="btn-accion"><i class="icon-edit fa-solid fa-pen"></i></button>
+                    </td>
+
+                </tr>
+
+                <tr class="maquinas-row">
+
+                    <td class="maquinas-td">Polea Cruzada (MQ-008)</td>
+                    <td class="maquinas-td">Estación multifuncional de poleas...</td>
+                    <td class="maquinas-td">Disponible </td>
+                    <td class="maquinas-td">28 Sep 2023</td>
+                    <td class="maquinas-td">
+                        <button class="btn-accion"><i class="icon-edit fa-solid fa-pen"></i></button>
+                    </td>
+
+                </tr>
+
+                <tr class="maquinas-row">
+
+                    <td class="maquinas-td">Bicicleta Estática Elite (MQ-022)</td>
+                    <td class="maquinas-td">Bicicleta de spinning con resistencia...</td>
+                    <td class="maquinas-td ">Fuera de Servicio</td>
+                    <td class="maquinas-td">15 Ago 2023</td>
+                    <td class="maquinas-td">
+                        <button class="btn-accion"><i class="icon-edit fa-solid fa-pen"></i></button>
+                    </td>
+
+                </tr>
+
+            </table>
+
+            <!-- Paginación -->
+            <div class="maquinas-footer">
+                <span class="footer-text">Mostrando 1 a 4 de 42 equipos</span>
+                <div class="pagination">
+                    <button class="page-btn">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+</body>
+
+</html>

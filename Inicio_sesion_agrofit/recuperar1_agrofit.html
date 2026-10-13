@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/styles-inicio.css">
+
+        <title> AgroFit </title>
+    </head>
+    <body >
+
+        <div class="recuperar1-container">
+            <!-- Título principal -->
+            <h1 class="recuperar1-title">Recuperar Clave</h1>
+            <p class="recuperar1-instructions">
+                Ingresa tu correo institucional o número de documento para iniciar el proceso de recuperación.
+            </p>
+
+            <!-- Bloque de instrucciones -->
+            <div class="recuperar1-box">
+            <h2 class="recuperar1-box-subtitle">Instrucciones</h2>
+                <p class="recuperar1-box-text">
+                    Se enviará un código de seguridad de 6 dígitos a tu correo institucional registrado para validar tu identidad.
+                </p>
+            </div>
+
+            <!-- Formulario -->
+            <form class="recuperar1-form" method="post" action="recuperar2_agrofit.html">
+                <label class="recuperar1-form-title" for="correo">Correo Institucional</label>
+                <input class="recuperar1-form-input" type="text" id="correo" name="correo" placeholder="Ingresa tu correo institucional" required>
+                <button class="btn-recuperar1" type="submit">Continuar</button>
+            </form>
+
+            <!-- Link volver -->
+            <div class="recuperar1-links">
+                <a class="recuperar1-links-btnvolver" href="inicio_agrofit.html">Volver al inicio de sesión</a>
+            </div>
+        </div>
+
+    </body>
+</html>

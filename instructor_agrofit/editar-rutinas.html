@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles-ins.css">
+
+    <title>Agrofit</title>
+</head>
+
+<body>
+    <!-- Botón volver -->
+    <div class="volver-container">
+        <a href="catalogo-rutinas.html" class="btn-volver-editar">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+    </div>
+
+    <!-- Contenido principal -->
+    <main class="editar-rutina-container">
+        <h1 class="editar-titulo">
+            <i class="fa-solid fa-pen-to-square"></i> Editar Rutina
+        </h1>
+        <p class="editar-subtitulo">
+            Modifica los detalles generales y los ejercicios de esta rutina del catálogo.
+        </p>
+
+        <!-- Detalles Generales -->
+        <section class="detalles-generales">
+            <h2 class="detalles-generales-title"><i class="fa-solid fa-list"></i> Detalles Generales</h2>
+            <div class="form-group">
+                <label class="group-text" for="nombre">Nombre de la Rutina:</label>
+                <input class="group-input" type="text" id="nombre" value="Fuerza Base Fase 1">
+            </div>
+            <div class="form-group">
+                <label class="group-text" for="nivel">Nivel de Dificultad:</label>
+                <select class="group-select" id="nivel">
+                    <option>Principiante</option>
+                    <option selected>Intermedio</option>
+                    <option>Avanzado</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="group-text" for="descripcion">Descripción:</label>
+                <textarea class="group-textarea" id="descripcion" rows="4">Rutina enfocada en el desarrollo de fuerza fundamental mediante ejercicios multiarticulares clave. Ideal para las primeras semanas del macrociclo.
+                </textarea>
+            </div>
+        </section>
+
+        <!-- Ejercicios -->
+        <section class="ejercicios">
+            <h2 class="ejercicio-ctitle-editar"> <i class="fa-solid fa-dumbbell"></i> Ejercicios</h2>
+
+            <!-- Ejercicio 1 -->
+            <div class="ejercicio-card">
+                <span class="ejercicio-numero">1</span>
+                <div class="ejercicio-info">
+
+                    <div class="form-group">
+                        <label class="group-text" for="ejercicio1">Ejercicio:</label>
+                        <input class="group-input" type="text" id="ejercicio1" value="Peso Muerto">
+                    </div>
+                    <div class="form-group">
+                        <label class="group-text" for="series1">Series:</label>
+                        <input class="group-input" type="number" id="series1" value="4">
+                    </div>
+                    <div class="form-group">
+                        <label class="group-text" for="reps1">Reps:</label>
+                        <input class="group-input" type="text" id="reps1" value="8–10">
+                    </div>
+                    <div class="form-group">
+                        <label class="group-text" for="descanso1">Descanso:</label>
+                        <input class="group-input" type="text" id="descanso1" value="90s">
+                    </div>
+                    <div class="form-group">
+                        <label class="group-text" for="tutorial1">Link del Tutorial:</label>
+                        <input class="group-input" type="url" id="tutorial1" value="https://youtube.com/...">
+                    </div>
+
+                </div>
+            </div>
+            <!-- Ejercicio 2 -->
+            <div class="ejercicio-card">
+                <span class="ejercicio-numero">2</span>
+                <div class="ejercicio-info">
+
+                    <div class="form-group">
+                        <label class="group-text" for="ejercicio2">Ejercicio:</label>
+                        <input class="group-input" type="text" id="ejercicio2" value="Press Militar con Mancuernas">
+                    </div>
+                    <div class="form-group">
+                        <label class="group-text" for="series2">Series:</label>
+                        <input class="group-input" class="group-text" type="number" id="series2" value="3">
+                    </div>
+                    <div class="form-group">
+                        <label class="group-text" for="reps2">Reps:</label>
+                        <input class="group-input" type="text" id="reps2" value="10–12">
+                    </div>
+                    <div class="form-group">
+                        <label class="group-text" for="descanso2">Descanso:</label>
+                        <input class="group-input" type="text" id="descanso2" value="60s">
+                    </div>
+                    <div class="form-group">
+                        <label class="group-text" for="tutorial2">Link del Tutorial:</label>
+                        <input class="group-input" type="url" id="tutorial2" value="https://youtube.com/...">
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Botón añadir -->
+            <button class="btn-agregar">
+                <i class="fa-solid fa-plus"></i> Añadir Ejercicio
+            </button>
+        </section>
+
+        <!-- Acciones -->
+        <div class="acciones-editar-rutina">
+            <form action="catalogo-rutinas.html">
+                <button class="btn-cancelar">
+                    <i class="fa-solid fa-xmark"></i> Cancelar
+                </button>
+                <button class="btn-actualizar">
+                    <i class="fa-solid fa-check"></i> Actualizar Rutina
+                </button>
+            </form>
+            
+            
+        </div>
+    </main>
+</body>
+
+</html>

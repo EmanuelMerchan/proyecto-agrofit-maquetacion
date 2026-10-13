@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles-ins.css">
+
+    <title>Agrofit</title>
+</head>
+
+<body>
+    <!-- Botón volver -->
+    <div class="volver-nueva-maquina">
+        <a href="maquinas_ins.html" class="btn-nueva-maquina">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+    </div>
+
+    <main class="maquina-container">
+        <h1 class="maquina-titulo">
+            <i class="fa-solid fa-clipboard-list"></i> Registrar Nueva Máquina
+        </h1>
+        <p class="maquina-subtitulo">
+            Completa la información de la máquina para agregarla al inventario.
+        </p>
+
+        <!-- Formulario -->
+        <div class="maquina-form">
+            <section class="maquina-card">
+                <h2 class="maquina-card-titulo">
+                    <i class="fa-solid fa-list"></i> Detalles de la Máquina
+                </h2>
+
+                
+                <div class="maquina-row">
+                    <div class="maquina-group">
+                        <label class="maquina-group-text" for="nombre-maquina">Nombre de la Máquina:</label>
+                        <input class="maquina-group-input" type="text" id="nombre-maquina" placeholder="Ej: Press de pecho">
+                    </div>
+                    <div class="maquina-group">
+                        <label class="maquina-group-text" for="id-maquina">ID/Número de Inventario:</label>
+                        <input class="maquina-group-input" type="text" id="id-maquina" placeholder="Ej: 001">
+                    </div>
+                </div>
+
+                
+                <div class="maquina-group">
+                    <label class="maquina-group-text" for="descripcion-maquina">Descripción:</label>
+                    <textarea class="maquina-group-textarea" id="descripcion-maquina" rows="4" placeholder="Detalles adicionales sobre la máquina..."></textarea>
+                </div>
+
+                
+                <div class="maquina-row">
+                    <div class="maquina-group">
+                        <label class="maquina-group-text" for="estado-maquina">Estado Inicial:</label>
+                        <select class="maquina-group-select" id="estado-maquina">
+                            <option>Seleccione estado...</option>
+                            <option>Operativa</option>
+                            <option>En mantenimiento</option>
+                            <option>Fuera de servicio</option>
+                        </select>
+                    </div>
+                    <div class="maquina-group">
+                        <label class="maquina-group-text" for="fecha-ingreso">Fecha de Ingreso:</label>
+                        <input class="maquina-group-input" type="date" id="fecha-ingreso">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Acciones -->
+        <div class="maquina-acciones">
+            <form action="maquinas_ins.html">
+                <button class="maquina-btn-cancelar"><i class="fa-solid fa-xmark"></i> Cancelar</button>
+                <button class="maquina-btn-guardar"><i class="fa-solid fa-check"></i> Guardar Máquina</button>
+            </form>
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>

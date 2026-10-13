@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles-ins.css">
+
+    <title>Agrofit</title>
+</head>
+
+<body>
+    <!-- Botón volver -->
+    <div class="volver-nueva-rutina">
+        <a href="catalogo-rutinas.html" class="btn-nueva-rutina">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+    </div>
+
+    <main class="nueva-rutina-container">
+        <h1 class="nueva-titulo">
+            <i class="fa-solid fa-plus"></i> Nueva Rutina
+        </h1>
+        <p class="nueva-subtitulo">
+            Completa los detalles y agrega los ejercicios de la nueva rutina.
+        </p>
+
+        <!-- Contenedor en dos columnas -->
+        <div class="nueva-grid">
+
+            <!-- Columna Izquierda -->
+            <div class="col-izquierda">
+                <!-- Detalles Generales -->
+                <section class="detalle-card">
+                    <h2><i class="fa-solid fa-list"></i> Detalles Generales</h2>
+                    <div class="form-group">
+                        <label for="nombre">Nombre de la Rutina:</label>
+                        <input type="text" id="nombre" placeholder="Ej. Tren Superior Hipertrofia A">
+                    </div>
+                    <div class="form-group">
+                        <label for="categoria">Categoría:</label>
+                        <select id="categoria">
+                            <option>Fuerza</option>
+                            <option>Resistencia</option>
+                            <option>Hipertrofia</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="aprendiz">Asignar a Aprendiz (Opcional):</label>
+                        <input type="text" id="aprendiz" placeholder="Buscar aprendiz...">
+                    </div>
+                </section>
+
+                <!-- Desacripcion -->
+                <section class="detalle-card">
+                    <h2><i class="fa-solid fa-note-sticky"></i> Descripcion</h2>
+                    <textarea rows="5" placeholder="Descripcion..."></textarea>
+                </section>
+            </div>
+
+            <!-- Columna Derecha -->
+            <div class="col-derecha">
+                <!-- Ejercicios -->
+                <section class="detalle-card">
+                    <h2><i class="fa-solid fa-dumbbell"></i> Ejercicios</h2>
+
+                    <div class="ejercicio-card">
+                        <span class="ejercicio-numero">1</span>
+                        <div class="ejercicio-info">
+                            <div class="form-group">
+                                <label for="ejercicio1">Ejercicio:</label>
+                                <input type="text" id="ejercicio1" value="Press de Banca con Barra">
+                            </div>
+                            <div class="form-group">
+                                <label for="series1">Series:</label>
+                                <input type="number" id="series1" value="4">
+                            </div>
+                            <div class="form-group">
+                                <label for="reps1">Repeticiones:</label>
+                                <input type="text" id="reps1" value="8–10">
+                            </div>
+                            <div class="form-group">
+                                <label for="descanso1">Descanso (s):</label>
+                                <input type="text" id="descanso1" value="90">
+                            </div>
+                            <div class="form-group">
+                                <label for="tutorial1">Link del Tutorial (opcional):</label>
+                                <input type="url" id="tutorial1" placeholder="https://youtube.com/...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ejercicio-card">
+                        <span class="ejercicio-numero">2</span>
+                        <div class="ejercicio-info">
+                            <div class="form-group">
+                                <label for="ejercicio2">Ejercicio:</label>
+                                <input type="text" id="ejercicio2" value="Remo con Mancuerna">
+                            </div>
+                            <div class="form-group">
+                                <label for="series2">Series:</label>
+                                <input type="number" id="series2" value="3">
+                            </div>
+                            <div class="form-group">
+                                <label for="reps2">Repeticiones:</label>
+                                <input type="text" id="reps2" value="10–12">
+                            </div>
+                            <div class="form-group">
+                                <label for="descanso2">Descanso (s):</label>
+                                <input type="text" id="descanso2" value="60">
+                            </div>
+                            <div class="form-group">
+                                <label for="tutorial2">Link del Tutorial (opcional):</label>
+                                <input type="url" id="tutorial2" placeholder="https://youtube.com/...">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-agregar-ejercicio" type="button">
+                        <i class="fa-solid fa-plus"></i> Agregar Ejercicio
+                    </button>
+                </section>
+            </div>
+        </div>
+
+        <!-- Acciones -->
+        <div class="acciones-nueva-rutina">
+            <form action="catalogo-rutinas.html"> 
+                <button class="btn-cancelar"><i class="fa-solid fa-xmark"></i> Cancelar</button>
+                <button class="btn-guardar"><i class="fa-solid fa-check"></i> Guardar Rutina</button>
+        
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

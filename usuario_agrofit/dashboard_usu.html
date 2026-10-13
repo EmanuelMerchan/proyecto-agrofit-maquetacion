@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles-usu.css">
+
+    <title>Agrofit</title>
+
+</head>
+
+<body>
+    <div class="layout">
+
+        <aside class="layout-aside">
+            <section class="layaut-content-menu">
+                <div class="content-menu-logo">
+                    <img class="logo-img" src="../img/agrofit-logo.png" alt="logo Agrofit">
+                </div>
+
+                <nav class="layaut-menu">
+                    <ul class="menu-list">
+
+                        <li class="menu-option">
+                            <a href="dashboard_usu.html" class="menu-link menu-link--active">
+                                <i class=" menu-icon fa-regular fa-chart-bar "></i>
+                                <span class="menu-overlay"> Dashboard </span>
+                            </a>
+                        </li>
+
+                        <li class="menu-option">
+                            <a href="progreso_usu.html" class="menu-link ">
+                                <i class=" menu-icon fa-solid fa-dumbbell"></i>
+                                <span class="menu-overlay"> Mi progreso </span>
+                            </a>
+                        </li>
+
+                        <li class="menu-option">
+                            <a href="perfil_usu.html" class="menu-link ">
+                                <i class=" menu-icon fa-solid fa-gears"></i>
+                                <span class="menu-overlay"> Perfil </span>
+                            </a>
+                        </li>
+
+                        <li class="menu-option">
+                            <hr class="linea-cerrar">
+                            <a href="#" class="menu-link-cerrar ">
+                                <i class=" menu-icon fa-solid fa-right-from-bracket"></i>
+                                <span class="menu-overlay"> Cerrar Sesión </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </section>
+        </aside>
+
+        <!-- perfil -->
+        <main class="layaut-contaiener">
+            <header class="top-perfil">
+                <h1 class="perfil-title">¡A Darle Campeon!</h1>
+                <div class="perfil-info">
+                    <div class="perfil-ins">
+                        <img src="../img/instructor.jpg" alt="Foto Instructor" class="perfil-img">
+                        <h5 class="perfil-rol">Usuario Gym</h5>
+                    </div>
+                    <h6 class="perfil-nombre">Lucas Paz</h6>
+                </div>
+            </header>
+
+            <!-- Contenido Principal -->
+            <!-- Rutina actual -->
+            <section class="rutina-actual">
+                <h2 class="rutina-titulo">
+                    <i class="fa-solid fa-dumbbell"></i> Rutina Actual
+                </h2>
+                <h3 class="rutina-nombre">
+                    Hipertrofia
+                </h3>
+                <p class="rutina-descripcion">
+                    
+                    Esta rutina se enfoca en maximizar el volumen de entrenamiento para estimular el crecimiento
+                    muscular en el tren superior, manteniendo una técnica impecable y controlando los tiempos de
+                    descanso.
+                </p>
+                <a href="rutina-usu.html" class="rutina-detalles">
+                    <i class="fa-solid fa-eye"></i> Ver detalles
+                </a>
+                <div class="rutina-duracion">
+                    <i class="fa-solid fa-calendar"></i> Duración: 15 Días
+                </div>
+            </section>
+
+            <!-- Cumplimiento de la rutina -->
+            <section class="rutina-cumplimiento">
+                <h3 class="cumplimiento-titulo">
+                    Cumplimiento De La Rutina
+                </h3>
+                <div class="cumplimiento-grafico">
+                    <div class="grafico-circular">
+                        <span class="grafico-texto">
+                            75% Completado
+                        </span>
+                    </div>
+                </div>
+                <div class="cumplimiento-detalles">
+                    <span class="hecho">
+                        <i class="fa-solid fa-check-circle"></i> Hecho (3)
+                    </span>
+                    <span class="pendiente">
+                        <i class="fa-solid fa-clock"></i> Pendiente (1)
+                    </span>
+                </div>
+            </section>
+
+        </main>
+    </div>
+</body>
+
+</html>

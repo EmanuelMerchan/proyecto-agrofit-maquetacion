@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/styles-inicio.css">
+
+        <title> AgroFit </title>
+    </head>
+    <body>
+
+        <div class="login-container">
+
+            <!-- Sección izquierda con imagen -->
+            <div class="login-left">
+                <img src="../img/agrofit-logo.png" alt="Gimnasio AgroFit" class="login-image">
+            </div>
+
+            <!-- Sección derecha con cuadro -->
+            <div class="login-right">
+                <div class="card">
+
+                    <!-- Logo del SENA -->
+                    <div class="card-header">
+                        <img src="../img/logosena.png" alt="Logo SENA" class="logo-sena">
+                    </div>
+
+                    <!-- Contenido del formulario -->
+                    <div class="card-body">
+                        <h1 class="login-title">Bienvenido a Agrofit</h1>
+                        <p class="login-subtitle">Inicia sesión para continuar</p>
+
+                        <form class="login-form" method="post">
+                            
+                            <!-- Correo  -->
+                            <div class="input-icons">
+                                <span class="input-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span> 
+                                <input class="input-text" type="email" id="correo" name="correo" placeholder="@sena.edu.co" required>
+                            </div>
+
+                            <!-- Contraseña  -->
+                            <div class="input-icons">
+                                <span class="input-icon">
+                                    <i class="fa-solid fa-lock"></i>
+                                </span>
+                                <input class="input-text" type="password" id="password" name="password" placeholder="********" required>
+                            </div>
+
+                            <!-- Botón -->
+                            <button type="submit" class="btn-login">
+                                <i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión
+                            </button>
+                        </form>
+
+                        <!-- Links -->
+                        <div class="login-links">
+                            <a href="recuperar1_agrofit.html" class="link-olvidar"> ¿Olvidaste tu contraseña?</a>
+                            <a href="registrar-usu_agrofit.html" class="link-registrar"> ¿No tienes una cuenta? <span class="link-registrar-subtitle"> Registrarse </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="card-footer">
+            &copy; SENA. Todos los derechos reservados.
+        </div>
+    </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles-usu.css">
+
+    <title>Agrofit</title>
+
+</head>
+
+<body>
+    <div class="layout">
+
+        <aside class="layout-aside">
+            <section class="layaut-content-menu">
+                <div class="content-menu-logo">
+                    <img class="logo-img" src="../img/agrofit-logo.png" alt="logo Agrofit">
+                </div>
+
+                <nav class="layaut-menu">
+                    <ul class="menu-list">
+
+                        <li class="menu-option">
+                            <a href="dashboard_usu.html" class="menu-link">
+                                <i class=" menu-icon fa-regular fa-chart-bar "></i>
+                                <span class="menu-overlay"> Dashboard </span>
+                            </a>
+                        </li>
+
+                        <li class="menu-option">
+                            <a href="progreso_usu.html" class="menu-link menu-link--active">
+                                <i class=" menu-icon fa-solid fa-dumbbell"></i>
+                                <span class="menu-overlay"> Mi progreso </span>
+                            </a>
+                        </li>
+
+                        <li class="menu-option">
+                            <a href="perfil_usu.html" class="menu-link ">
+                                <i class=" menu-icon fa-solid fa-gears"></i>
+                                <span class="menu-overlay"> Perfil </span>
+                            </a>
+                        </li>
+
+                        <li class="menu-option">
+                            <hr class="linea-cerrar">
+                            <a href="#" class="menu-link-cerrar ">
+                                <i class=" menu-icon fa-solid fa-right-from-bracket"></i>
+                                <span class="menu-overlay"> Cerrar Sesión </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </section>
+        </aside>
+
+        <!-- perfil -->
+        <main class="layaut-contaiener">
+            <header class="top-perfil">
+                <h1 class="perfil-title">Tu Evolucion</h1>
+                <div class="perfil-info">
+                    <div class="perfil-ins">
+                        <img src="../img/instructor.jpg" alt="Foto Instructor" class="perfil-img">
+                        <h5 class="perfil-rol">Usuario Gym</h5>
+                    </div>
+                    <h6 class="perfil-nombre">Lucas Paz</h6>
+                </div>
+            </header>
+
+            <!-- Contenido Principal -->
+            <!-- Resumen de logros -->
+            <section class="resumen-logros">
+                <h2 class="resumen-titulo">
+                    <i class="fa-solid fa-trophy"></i> Resumen de Logros
+                </h2>
+
+                <div class="resumen-grid">
+                    <div class="resumen-grid-2">
+                        <!-- Días Activos -->
+                        <div class="resumen-card">
+                            <i class="resumen-card-icon fa-solid fa-calendar-day"></i>
+                            <h3 class="resumen-card-title">Días Activos (Mes)</h3>
+                            <p class="resumen-card-subtitle">18 días</p>
+                        </div>
+
+                        <!-- Calorías Quemadas -->
+                        <div class="resumen-card">
+                            <i class="resumen-card-icon fa-solid fa-fire"></i>
+                            <h3 class="resumen-card-title">Calorías Quemadas (Hoy)</h3>
+                            <p class="resumen-card-subtitle">450 kcal</p>
+                        </div>
+
+                    </div>
+
+                    <div class="resumen-grid-2"> 
+                        <!-- Tiempo en Gym -->
+                        <div class="resumen-card">
+                            <i class=" resumen-card-icon fa-solid fa-clock"></i>
+                            <h3 class="resumen-card-title">Tiempo en Gym (Promedio)</h3>
+                            <p class="resumen-card-subtitle">65 min</p>
+                            <span class="nota">(Basado en tus últimas 10 sesiones)</span>
+                        </div>
+
+                        <!-- Ejercicios Completados -->
+                        <div class="resumen-card">
+                            <i class="resumen-card-icon fa-solid fa-dumbbell"></i>
+                            <h3 class="resumen-card-title">Ejercicios Completados</h3>
+                            <p class="resumen-card-subtitle">124</p>
+                            <span class="nota">(Total acumulado este mes)</span>
+                        </div>
+                    </div>
+                </div>
+                    
+            </section>
+
+
+            <!-- Historial reciente -->
+            <section class="historial-reciente">
+                <h2 class="historial-titulo">
+                    <i class="fa-solid fa-list"></i> Historial Reciente
+                </h2>
+
+                <!-- Entrada 1 -->
+                <div class="historial-item">
+                    <div class="historial-fecha">
+                        <i class="fa-solid fa-calendar-check"></i> 24 Oct 08:30 AM
+                    </div>
+                    <div class="historial-info">
+                        <h3 class="historial-info-title" >Tren Inferior - Fuerza <span class="estado estado-completado"><i class="fa-solid fa-check"></i> Completado</span></h3>
+                        <p class="historial-nota">Excelente técnica en la sentadilla pesada hoy. Mantener este volumen para la próxima semana.</p>
+                        <a href="#" class="btn-detalle"><i class="fa-solid fa-eye"></i> Ver Detalle</a>
+                    </div>
+                </div>
+
+                <!-- Entrada 2 -->
+                <div class="historial-item">
+                    <div class="historial-fecha">
+                        <i class="fa-solid fa-calendar-check"></i> 22 Oct 10:00 PM
+                    </div>
+                    <div class="historial-info">
+                        <h3 class="historial-info-title" >Tren Superior - Hipertrofia <span class="estado estado-adaptado"><i class="fa-solid fa-wrench"></i>Adaptado</span></h3>
+                        <p class="historial-nota">Redujimos carga en press militar por ligera molestia en hombro izquierdo. Monitorear.</p>
+                        <a href="#" class="btn-detalle"><i class="fa-solid fa-eye"></i> Ver Detalle</a>
+                    </div>
+                </div>
+
+                <!-- Entrada 3 -->
+                <div class="historial-item">
+                    <div class="historial-fecha">
+                        <i class="fa-solid fa-calendar-check"></i> 20 Oct 07:00 AM
+                    </div>
+                    <div class="historial-info">
+                        <h3 class="historial-info-title">Metabólico / Core <span class="estado estado-completado"><i class="fa-solid fa-check"></i>Completado</span></h3>
+                        <p class="historial-nota">Buen ritmo cardíaco mantenido. Subir intensidad en la fase de asalto la próxima vez.</p>
+                        <a href="#" class="btn-detalle"><i class="fa-solid fa-eye"></i> Ver Detalle</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+</body>
+
+</html>

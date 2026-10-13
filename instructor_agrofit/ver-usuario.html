@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles-ins.css">
+    <title>Agrofit</title>
+</head>
+
+<body>
+    <!-- Botón volver -->
+    <div class="volver-ver-usuario">
+        <a href="usuarios_ins.html" class="btn-ver-usuario">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+    </div>
+
+    <!-- Contenedor Principal -->
+    <main class="perfil-container">
+
+        <!--  SECCIÓN SUPERIOR  -->
+        <div class="perfil-header-grid">
+            
+            <!-- Tarjeta 1: Perfil del Aprendiz -->
+            <section class="card perfil-main-card">
+                <div class="perfil-avatar-wrapper">
+                    <img src="../img/instructor.jpg" alt="Laura Martínez" class="perfil-foto">
+                    <span class="status-icon"><i class="fa-solid fa-circle-check"></i></span>
+                </div>
+
+                <div class="perfil-info-principal">
+                    <span class="badge-status">• ACTIVA</span>
+                    <h1 class="perfil-nombre-usu">Laura Martínez</h1>
+                    <h2 class="perfil-rol">Aprendiz</h2>
+
+                    <div class="perfil-tags">
+                        <span class="tag-item">
+                            <i class="tag-item-icon fa-solid fa-graduation-cap"></i> Tecnólogo en Actividad Física
+                        </span>
+                        <span class="tag-item">
+                            <i class="tag-item-icon fa-solid fa-hashtag"></i> Ficha: 2548901
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tarjeta 2: Rutina Actual y Progreso -->
+            <section class="card rutina-actual-card">
+                <div class="rutina-header-icon">
+                    <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <span class="label-muted">RUTINA ACTUAL</span>
+                <h3 class="rutina-titulo-actual">Hipertrofia Tren Inferior</h3>
+
+                <div class="progreso-container">
+                    <div class="progreso-header">
+                        <span>Progreso del Ciclo</span>
+                        <span class="progreso-porcentaje">65%</span>
+                    </div>
+                    <div class="barra-progreso-bg">
+                        <div class="barra-progreso-fill" style="width: 65%;"></div>
+                    </div>
+                </div>
+
+                <div class="ultima-sesion">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span>Última sesión: Ayer, 18:30</span>
+                </div>
+            </section>
+
+        </div>
+
+        <!--  SECCIÓN INFERIOR  -->
+        <div class="perfil-detalles-grid">
+
+            <!-- Columna Izquierda: Información Personal -->
+            <section class="card info-personal-card">
+                <h3 class="section-title">
+                    <i class="section-title-i fa-regular fa-id-card"></i> Información Personal
+                </h3>
+
+                <div class="info-grid-2col">
+
+                    <div class="info-field">
+                        <label class="info-field-label">TIPO DE DOCUMENTO</label>
+                        <div class="field-box">Cédula de Ciudadanía</div>
+                    </div>
+
+                    <div class="info-field">
+                        <label class="info-field-label">NÚMERO DE DOCUMENTO</label>
+                        <div class="field-box">1.023.456.789</div>
+                    </div>
+
+                </div>
+
+                <div class="info-field margin-top">
+
+                    <label class="info-field-label">CORREO INSTITUCIONAL</label>
+                    <div class="field-box field-with-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>lmartinez@misena.edu.co</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Columna Derecha: Datos Biométricos -->
+            <section class="card datos-biometricos-card">
+                <h3 class="section-title">
+                    <i class="fa-regular fa-square-minus"></i> Datos Biométricos
+                </h3>
+
+                <div class="biometricos-grid">
+                    <div class="bio-box">
+                        <span class="bio-label">EDAD</span>
+                        <div class="bio-value">22 <small>años</small></div>
+                    </div>
+
+                    <div class="bio-box">
+                        <span class="bio-label">ESTATURA</span>
+                        <div class="bio-value">1.65 <small>m</small></div>
+                    </div>
+
+                    <div class="bio-box">
+                        <span class="bio-label">PESO ACTUAL</span>
+                        <div class="bio-value">62 <small>kg</small></div>
+                    </div>
+
+                    <div class="bio-box bio-box-highlight">
+                        <span class="bio-label">OBJETIVO PRINCIPAL</span>
+                        <div class="bio-value-highlight">Hipertrofia</div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+    
+</body>
+
+</html>

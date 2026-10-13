@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles-ins.css">
+
+    <title>Agrofit</title>
+
+</head>
+
+<body>
+    <div class="layout">
+
+        <aside class="layout-aside">
+            <section class="layaut-content-menu">
+                <div class="content-menu-logo">
+                    <img class="logo-img" src="../img/agrofit-logo.png" alt="logo Agrofit">
+                </div>
+
+                <nav class="layaut-menu">
+                    <ul class="menu-list">
+
+                        <li class="menu-option">
+                            <a href="dashboard_ins.html" class="menu-link ">
+                                <i class=" menu-icon fa-regular fa-chart-bar "></i>
+                                <span class="menu-overlay"> Dashboard </span>
+                            </a>
+                        </li>
+
+                        <li class="menu-option">
+                            <a href="rutinas_ins.html" class="menu-link menu-link--active">
+                                <i class=" menu-icon fa-solid fa-dumbbell"></i>
+                                <span class="menu-overlay"> Rutinas </span>
+                            </a>
+                        </li>
+
+                        <li class="menu-option">
+                            <a href="maquinas_ins.html" class="menu-link ">
+                                <i class=" menu-icon fa-solid fa-gears"></i>
+                                <span class="menu-overlay"> Maquinas </span>
+                            </a>
+                        </li>
+
+                        <li class="menu-option">
+                            <a href="usuarios_ins.html" class="menu-link ">
+                                <i class=" menu-icon fa-solid fa-user-group"></i>
+                                <span class="menu-overlay"> Usuarios </span>
+                            </a>
+                        </li>
+
+                        <li class="menu-option">
+                            <hr class="linea-cerrar">
+                            <a href="#" class="menu-link-cerrar ">
+                                <i class=" menu-icon fa-solid fa-right-from-bracket"></i>
+                                <span class="menu-overlay"> Cerrar Sesión </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </section>
+        </aside>
+
+        <!-- perfil -->
+        <main class="layaut-contaiener">
+            <header class="top-perfil">
+                <h1 class="perfil-title">Gestion De Rutinas</h1>
+                <div class="perfil-info">
+                    <div class="perfil-ins">
+                        <img src="../img/instructor.jpg" alt="Foto Instructor" class="perfil-img">
+                        <h5 class="perfil-rol">Instructor Gym</h5>
+                    </div>
+                    <h6 class="perfil-nombre">Cesar Paz</h6>
+                </div>
+            </header>
+
+            <!-- Contenido Principal -->
+            <!-- Pagina -->
+            <main class="page-content">
+
+                <!-- Barra de busqueda -->
+                <div class="search-bar">
+                    <i class="icon-search fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Buscar..." class="search-input">
+                </div>
+                <!-- Tabla de rutinas -->
+                <div class="table-card">
+                    <div class="table-header">
+                        <h3 class="table-title">Rutinas Asignadas</h3> 
+                    </div> 
+
+                    <table class="table">
+
+                        <tr class="head-title">
+                            <th>Nombre / Tipo</th>
+                            <th>Aprendiz Asignado</th>
+                            <th>Ejercicios</th>
+                            <th>Estado</th>
+                        </tr> 
+
+                        <tr>
+                            <td>
+                                <div class="table-name">Semana 1 - Acondicionamiento</div>
+                                <div class="table-sub">Adaptación (RF04)</div>
+                            </td>
+                            <td>Juan Pérez</td>
+                            <td>8 ejercicios</td>
+                            <td>Activa</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="table-name">Hipertrofia Tren Superior</div>
+                                <div class="table-sub">Intermedio (RF05)</div>
+                            </td>
+                            <td>María Gómez</td>
+                            <td>12 ejercicios</td>
+                            <td>Activa</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="table-name">Fuerza Base - Pierna</div>
+                                <div class="table-sub">Avanzado (RF05)</div>
+                            </td>
+                            <td>Generica (Sin asignar)</td>
+                            <td>6 ejercicios</td>
+                            <td>Borrador</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <!-- Panel -->
+                <div class="side-panel">
+                    <!-- Resumen -->
+                    <div class="stats-card">
+                        <h3 class="stats-title">Resumen de Rutinas</h3>
+                        <div class="stats-item">
+                            <span>Semanas de Adaptación</span>
+                            <span>8</span>
+                        </div>
+                        <div class="stats-item">
+                            <span>Rutinas Generales</span>
+                            <span>16</span>
+                        </div>
+                        <div class="stats-item">
+                            <span>Sin Asignar</span>
+                            <span>3</span>
+                        </div>
+                    </div>
+
+                    <!-- Rutinas recientes -->
+                    <div class="recent-card">
+                        <div class="recent-header">
+                            <h3 class="recent-title">Rutinas</h3>
+                            <a href="catalogo-rutinas.html" class="btn-link">Ver más</a>
+                        </div>
+                        <ul class="recent-list">
+                            <li class="recent-item">
+                                <div>Semanas de Adaptación</div>
+                                <div>8 rutinas activas</div>
+                            </li>
+                            <li class="recent-item">
+                                <div>Rutinas Generales</div>
+                                <div>16 rutinas activas</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+    </div>
+
+
+
+</body>
+
+</html>

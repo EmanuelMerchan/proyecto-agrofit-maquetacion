@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles-usu.css">
+    <title>Agrofit</title>
+</head>
+
+<body>
+    <!-- Botón volver -->
+    <div class="volver-actualizar-datos">
+        <a href="perfil_usu.html" class="btn-actualizar-datos">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+    </div>
+
+
+    <!-- Contenedor Centrado -->
+    <main class="medidas-container">
+        <section class="medidas-card">
+            <h1 class="medidas-title">Actualizar Medidas</h1>
+            <p class="medidas-subtitle">
+                Mantén tu progreso al día para ajustar tus rutinas.
+            </p>
+
+            <form class="medidas-form">
+
+                <!-- Peso  -->
+                <div class="form-group">
+                    <label for="peso">Peso (kg)</label>
+                    <div class="input-with-icon">
+                        <i class="fa-solid fa-weight-scale"></i>
+                        <input type="number" id="peso"  placeholder="Ej. 70.5" required>
+                    </div>
+                </div>
+
+                <!-- Altura  -->
+                <div class="form-group">
+                    <label for="altura">Altura (cm)</label>
+                    <div class="input-with-icon">
+                        <i class="fa-solid fa-arrows-up-down"></i>
+                        <input type="number" id="altura" placeholder="Ej. 175" required>
+                    </div>
+                </div>
+
+                <!-- Porcentaje de Grasa Corporal -->
+                <div class="form-group">
+                    <div class="label-wrapper">
+                        <label for="grasa">Porcentaje de Grasa Corporal</label>
+                        <span class="optional-tag">(OPCIONAL)</span>
+                    </div>
+                    <div class="input-with-icon">
+                        <i class="fa-solid fa-percent"></i>
+                        <input type="number" id="grasa"  placeholder="Ej. 15.2">
+                    </div>
+                </div>
+
+                <!-- Botones de Acción -->
+                <div class="form-actions">
+                    
+                    <a href="perfil_usu.html"  class="btn-guardar">
+                        <i class="fa-regular fa-floppy-disk"></i> Guardar Medidas
+                    </a>
+                        
+
+                    <a href="perfil_usu.html" class="btn-cancelar">Cancelar</a>
+                    
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

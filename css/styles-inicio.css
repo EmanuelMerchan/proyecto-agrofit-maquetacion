@@ -1,0 +1,783 @@
+:root {
+
+    --color-primary: #8DF706;
+    --color-secondary: #4CAF50;
+    --color-tercero: #00FF66;
+    --color-neutral: #A0AFA0;
+    --color-subtitle: rgb(0, 0, 0);
+    --color-background: white;
+    --color-bordes: #555;
+    --color-fondo: rgba(206, 202, 202, 0.404);
+    --color-text: rgb(29, 27, 27);
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 1.5rem;
+    background-color: var(--color-fondo);
+}
+
+/* Contenedor principal */
+.login-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sección izquierda */
+.login-left {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-fondo);
+}
+
+.login-image {
+    margin-left: 10%;
+    width: 100%;
+    height: 100%;
+}
+
+/* Sección derecha */
+.login-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: var(--color-fondo);
+}
+
+/* Card */
+.card {
+    width: 420px;
+    max-width: 95%;
+    background: var(--color-background);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header del card */
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 20px;
+}
+
+.logo-sena {
+    height: 50px;
+    width: auto;
+}
+
+/* Body del card */
+.card-body {
+    padding: 28px;
+}
+
+.login-title {
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    margin-bottom: 6px;
+}
+
+.login-subtitle {
+    text-align: center;
+    margin-bottom: 18px;
+    color: var(--color-neutral);
+    font-size: 0.95rem;
+}
+
+/* Formulario */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Grupo de input con icono */
+.input-icons {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    color: var(--color-neutral);
+    font-size: 1rem;
+}
+
+.input-text {
+    width: 100%;
+    padding: 12px 14px 12px 38px;
+    border: 1px solid var(--color-neutral);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 300ms ease-in-out;
+    ;
+}
+
+.input-text:focus {
+    outline: none;
+    border-color: var(--color-tercero);
+    box-shadow: 0 0 0 3px rgba(141, 247, 6, 0.2);
+}
+
+/* Botón */
+.btn-login {
+    margin-top: 6px;
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.btn-login:hover {
+    background-color: var(--color-primary);
+    transform: scale(1.1);
+}
+
+/* Links */
+.login-links {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.link-olvidar,
+.link-registrar {
+    color: var(--color-neutral);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 300ms ease-in-out;
+}
+
+.link-olvidar:hover {
+    color: var(--color-secondary);
+}
+
+/* Iconos personalizados */
+.link-olvidar {
+    color: var(--color-neutral);
+    font-size: 1rem;
+}
+
+.link-registrar {
+    color: var(--color-neutral);
+    font-size: 1rem;
+}
+
+
+.link-registrar-subtitle {
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+/* Footer */
+.card-footer {
+    padding: 12px 18px;
+    background: var(--color-background);
+    text-align: center;
+    font-size: 0.82rem;
+    color: var(--color-neutral);
+}
+
+
+
+
+/* recuperar contraseña conatiners */
+.recuperar1-container,
+.verificar-container,
+.password-container {
+    margin: 3rem auto 1rem;
+    width: 420px;
+    max-width: 95%;
+    background: var(--color-background);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 28px;
+}
+
+/* Título e instrucciones */
+.recuperar1-title {
+    font-size: 1.6rem;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.recuperar1-instructions {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--color-neutral);
+}
+
+/* Bloque de instrucciones */
+.recuperar1-box {
+    background: rgba(119, 99, 99, 0.082);
+    border: 1px solid var(--color-background);
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 20px;
+}
+
+.recuperar1-box-subtitle {
+    font-size: 1rem;
+    color: var(--color-secondary);
+    margin-bottom: 6px;
+}
+
+.recuperar1-box-text {
+    font-size: 0.9rem;
+    color: var(--color-neutral);
+}
+
+/* Formulario */
+.recuperar1-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.recuperar1-form-title {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.recuperar1-form-input {
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 300ms ease-in-out;
+}
+
+.recuperar1-form-input:focus {
+    outline: none;
+    border-color: var(--color-tercero);
+    box-shadow: 0 0 0 3px rgba(141, 247, 6, 0.2);
+}
+
+/* Botón */
+.btn-recuperar1 {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-recuperar1:hover {
+    background-color: var(--color-secondary);
+}
+
+/* Link volver */
+.recuperar1-links {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.recuperar1-links-btnvolver {
+    color: var(--color-tercero);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+/* verificar */
+/* Imagen de seguridad */
+.verificar-imagen {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.imagen-candado {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 12px 12px 12px 12px;
+}
+
+/* Título */
+.verificar-title {
+    font-size: 1.6rem;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Mensaje */
+.verificar-mensaje {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--color-neutral);
+}
+
+.verificar-mensaje-subtitle {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+/* Formulario */
+.verificar-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+}
+
+/* Inputs del código */
+.codigo-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.codigo-inputs-numero {
+    width: 45px;
+    height: 55px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid var(--color-bordes);
+    border-radius: 8px;
+    transition: all 300ms ease-in-out;
+}
+
+.codigo-inputs-numero:focus {
+    outline: none;
+    border-color: var(--color-tercero);
+    box-shadow: 0 0 0 3px rgba(141, 247, 6, 0.2);
+}
+
+/* Botón */
+.btn-verificar {
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.btn-verificar:hover {
+    background-color: var(--color-primary);
+    transform: translateY(-1px);
+}
+
+/* Links */
+.verificar-links {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+}
+
+.link-reenviar-codigo {
+    color: var(--color-tercero);
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.link-voler-r1 {
+    color: var(--color-neutral);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.link-reenviar-codigo:hover,
+.link-voler-r1:hover {
+    color: var(--color-secondary);
+}
+
+
+
+
+/* Cambiar contraseña */
+/* Título y subtítulo */
+.password-title {
+    font-size: 1.6rem;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.password-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--color-neutral);
+}
+
+/* Formulario */
+.password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+
+/* Campos de contraseña */
+.password-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.password-field-subtitle {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.password-field-input {
+    padding: 12px;
+    border: 1px solid var(--color-bordes);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.password-field-input:focus {
+    outline: none;
+    border-color: var(--color-bordes);
+    box-shadow: 0 0 0 3px rgba(141, 247, 6, 0.2);
+}
+
+/* Requisitos */
+.password-requisitos {
+    background: var(--color-background);
+    border: 1px solid var(--color-bordes);
+    border-radius: 8px;
+    padding: 14px;
+}
+
+.password-requisitos-title {
+    font-size: 1rem;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+}
+
+.password-requisitos-list {
+    list-style: disc inside;
+    font-size: 0.9rem;
+    color: var(--color-neutral);
+}
+
+/* Botón */
+.btn-password {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.btn-password:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-1px);
+}
+
+/* Link volver */
+.password-links {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.link-voler-ini {
+    color: var(--color-neutral);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.link-voler-ini:hover {
+    color: var(--color-tercero);
+}
+
+
+
+
+/*Registrar usuario*/
+.registrar-container {
+    border-radius: 12px;
+    background-color: var(--color-background);
+    margin: 3rem auto 1rem;
+    margin-left: 80px;
+    margin-right: 70px;
+    position: relative;
+    display: grid;
+    grid-template-areas:
+        "left right";
+    grid-template-columns: 20% 80%;
+}
+
+/* Parte izquierda */
+.registrar-left {
+    grid-area: left;
+    background: linear-gradient(to bottom right, #8DF706, #4CAF50);
+}
+
+.registrar-title {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--color-background);
+}
+
+.registrar-subtitle {
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+/* parte derecha */
+.registrar-right {
+    grid-area: right;
+    margin: 3rem;
+    padding: 1rem;
+}
+
+/*titulo*/
+.resgistrar-title {
+    padding: 1rem;
+}
+
+/*requisitos*/
+.registrar-section {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+    position: relative;
+}
+
+.registrar-requisitos {
+    display: flex;
+    flex-direction: column;
+}
+
+.requisito-text {
+    padding: 8px 8px 8px 32px;
+    background: transparent;
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+/* Perfil */
+.registrar-rol {
+    padding: 1rem;
+}
+
+.section-subtitle {
+    margin-top: 1rem;
+    color: var(--color-text);
+    font-size: 1.5rem;
+}
+
+.roles-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.roles-btn {
+    font-size: 1.5rem;
+    background-color: var(--color-background);
+    padding: 10px 12px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.roles-btn:focus {
+    background-color: var(--color-background);
+    color: var(--color-secondary);
+    border: 1px solid var(--color-primary);
+}
+
+/*  CAMPOS DINÁMICOS  */
+.dynamic-fields {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.dynamic-fields label {
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+    color: #333;
+}
+
+.dynamic-fields input,
+.dynamic-fields select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.dynamic-fields input:focus,
+.dynamic-fields select:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.3);
+}
+
+/*  SECCIONES  */
+.staff-fields,
+.apprentice-fields,
+.dependencia-field,
+.contract-details {
+    margin-top: 15px;
+}
+
+.dependencia-field label{
+    margin-top: 1rem;
+}
+
+.contract-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+
+/*  UTILIDAD  */
+.hidden {
+    display: none;
+}
+
+
+/*inputs*/
+.registrar-input {
+    width: 13rem;
+    border: none;
+    border-bottom: 2px solid var(--color-secondary);
+    background: transparent;
+    padding: 8px 4px;
+    font-size: 1rem;
+    color: var(--color-text);
+    transition: border-color 0.2s;
+}
+
+.registrar-input:focus {
+    outline: none;
+    border-bottom-color: var(--color-tercero);
+}
+
+/*iconos*/
+.icono-registro {
+    margin-top: 0.5rem;
+    position: absolute;
+}
+
+/*credenciales*/
+.registrar-credenciales {
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.credenciales-datos {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.credenciales-datos-clave {
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.confimar-clave-icon,
+.registrar-input-confimar{
+    margin-left: 3rem;
+}
+
+.credenciale-dato-clave {
+    padding-right: 6.8rem;
+}
+
+/*boton*/
+.registrar-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn-secondary {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 10px 16px;
+    border: 1px solid var(--color-secondary);
+    border-radius: 8px;
+    transition: all 300ms ease-in-out;
+    margin-right: 1rem;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-background);
+    color: var(--color-tercero);
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-tercero);
+    transform: translateY(-1px);
+}

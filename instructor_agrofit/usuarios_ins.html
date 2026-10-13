@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/styles-ins.css">
+
+        <title>Agrofit</title>
+
+    </head>
+
+    <body>
+        <div class="layout">
+
+            <aside class="layout-aside">
+                <section class="layaut-content-menu">
+                    <div class="content-menu-logo">
+                        <img class="logo-img" src="../img/agrofit-logo.png" alt="logo Agrofit">
+                    </div>
+
+                    <nav class="layaut-menu">
+                        <ul class="menu-list">
+
+                            <li class="menu-option">
+                                <a href="dashboard_ins.html" class="menu-link ">
+                                    <i class=" menu-icon fa-regular fa-chart-bar "></i>
+                                    <span class="menu-overlay"> Dashboard </span>
+                                </a>
+                            </li>
+
+                            <li class="menu-option">
+                                <a href="rutinas_ins.html" class="menu-link">
+                                    <i class=" menu-icon fa-solid fa-dumbbell"></i>
+                                    <span class="menu-overlay"> Rutinas </span>
+                                </a>
+                            </li>
+
+                            <li class="menu-option">
+                                <a href="maquinas_ins.html" class="menu-link ">
+                                    <i class=" menu-icon fa-solid fa-gears"></i>
+                                    <span class="menu-overlay"> Maquinas </span>
+                                </a>
+                            </li>
+
+                            <li class="menu-option">
+                                <a href="usuarios_ins.html" class="menu-link menu-link--active">
+                                    <i class=" menu-icon fa-solid fa-user-group"></i>
+                                    <span class="menu-overlay"> Usuarios </span>
+                                </a>
+                            </li>
+
+
+                            <li class="menu-option">
+                                <hr class="linea-cerrar">
+                                <a href="#" class="menu-link-cerrar ">
+                                    <i class=" menu-icon fa-solid fa-right-from-bracket"></i>
+                                    <span class="menu-overlay"> Cerrar Sesión </span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </section>
+            </aside>
+
+            <!-- perfil -->
+            <main class="layaut-contaiener">
+                <header class="top-perfil">
+                    <h1 class="perfil-title">Gestion De Maquinas</h1>
+                    <div class="perfil-info">
+                        <div class="perfil-ins">
+                            <img src="../img/instructor.jpg" alt="Foto Instructor" class="perfil-img">
+                            <h5 class="perfil-rol">Instructor Gym</h5>
+                        </div>
+                        <h6 class="perfil-nombre">Cesar Paz</h6>
+                    </div>
+                </header>
+
+                <!-- Contenido Principal -->
+                    <!-- Barra de búsqueda y filtros -->
+                    <div class="usuarios-controls">
+                        <input type="text" class="search-input" placeholder="Buscar por nombre, correo o ficha...">
+                        <button class="filter-btn active">Todos</button>
+                        <button class="filter-btn">Funcionarios</button>
+                        <button class="filter-btn">Aprendices</button>
+                    </div>
+
+                    <!-- Tabla de usuarios -->
+                    <table class="usuarios-table">
+
+                        <tr class="usuarios-row-head">
+                            <th class="usuarios-th">USUARIO</th>
+                            <th class="usuarios-th">ROL</th>
+                            <th class="usuarios-th">FICHA/DEPENDENCIA</th>
+                            <th class="usuarios-th">ESTADO</th>
+                            <th class="usuarios-th">ACCIONES</th>
+                        </tr>
+
+                        <tr class="usuarios-row">
+                            <td class="usuarios-td">
+
+                                <div class="usuario-info">
+                                    <span class="usuario-nombre"> Carlos Rodríguez</span><br>
+                                    <span class="usuario-email">carlos.r@agrofit.com</span>
+                                </div>
+                            </td>
+                            <td class="usuarios-td usuario-rol">Funcionario</td>
+                            <td class="usuarios-td">Agropecuario</td>
+                            <td class="usuarios-td ">
+                                <i class="estado-activo fa-solid fa-circle"></i> Activo
+                            </td>
+                            <td class="usuarios-td acciones">
+                                <form action="asignar-rutinas.html">
+                                    <button class="btn-accion"><i class="fa-regular fa-clipboard"></i></button>
+                                </form>
+                                
+                                <form action="ver-usuario.html">
+                                    <button class="btn-accion"><i class="fa-solid fa-eye"></i></button>
+
+                                </form>
+                            </td>
+                        </tr>
+
+                        <tr class="usuarios-row">
+                            <td class="usuarios-td">
+                                <div class="usuario-info">
+                                    <span class="usuario-nombre">Laura Martínez</span><br>
+                                    <span class="usuario-email">laura.m@aprendiz.sena.edu.co</span>
+                                </div>
+                            </td>
+                            <td class="usuarios-td usuario-rol ">Aprendiz</td>
+                            <td class="usuarios-td">250819</td>
+                            <td class="usuarios-td ">
+                                <i class="estado-activo fa-solid fa-circle"></i> Activo
+                            </td>
+                            <td class="usuarios-td acciones">
+                                <button class="btn-accion"><i class="fa-regular fa-clipboard"></i></button>
+                                <button class="btn-accion"><i class="fa-solid fa-eye"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr class="usuarios-row">
+                            <td class="usuarios-td">
+                                <div class="usuario-info">
+                                    <span class="usuario-nombre">Andrés Felipe Gómez</span><br>
+                                    <span class="usuario-email">afgomez@aprendiz.sena.edu.co</span>
+                                </div>
+                            </td>
+                            <td class="usuarios-td usuario-rol">Aprendiz</td>
+                            <td class="usuarios-td">250820</td>
+                            <td class="usuarios-td ">
+                                <i class="estado-inactivo fa-solid fa-circle"></i> Inactivo
+                            </td>
+                            <td class="usuarios-td acciones">
+                                <button class="btn-accion"><i class="fa-regular fa-clipboard"></i></button>
+                                <button class="btn-accion"><i class="fa-solid fa-eye"></i></button>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    <!-- Footer -->
+                    <div class="usuarios-footer">
+                        <span class="footer-text">Mostrando 1 a 3 de 45 usuarios</span>
+                        <div class="pagination">
+                            <button class="page-btn">1</button>
+                            <button class="page-btn">2</button>
+                            <button class="page-btn">3</button>
+                        </div>
+                    </div>
+                
+        </div>
+
+    </body>
+
+</html>

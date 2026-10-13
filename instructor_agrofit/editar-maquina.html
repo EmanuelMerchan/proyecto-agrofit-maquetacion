@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles-ins.css">
+
+    <title>Agrofit</title>
+</head>
+
+<body>
+    <!-- Botón volver -->
+    <div class="volver-editar-maquina">
+        <a href="maquinas_ins.html" class="btn-editar-maquina">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+    </div>
+
+    <main class="editar-maquina-container">
+        <h1 class="editar-maquina-titulo">
+            <i class="fa-solid fa-pen-to-square"></i> Editar Máquina
+        </h1>
+        <p class="editar-maquina-subtitulo">
+            Modifica la información de la máquina seleccionada.
+        </p>
+
+        <!-- Formulario -->
+        <div class="editar-maquina-form">
+            <section class="editar-maquina-card">
+                <h2 class="editar-maquina-card-titulo">
+                    <i class="fa-solid fa-list"></i> Detalles de la Máquina
+                </h2>
+
+                <!-- ID + Nombre -->
+                <div class="editar-maquina-row">
+
+                    <div class="editar-maquina-group">
+                        <label class="editar-maquina-group-text" for="id-maquina">ID de Máquina:</label>
+                        <input class="editar-maquina-group-input" type="text" id="id-maquina" value="MQ-001">
+                    </div>
+
+                    <div class="editar-maquina-group">
+                        <label class="editar-maquina-group-text" for="nombre-maquina">Nombre:</label>
+                        <input class="editar-maquina-group-input" type="text" id="nombre-maquina" value="Prensa de Piernas (Leg Press)">
+                    </div>
+
+                </div>
+
+                <!-- Estado -->
+                <div class="editar-maquina-row">
+                    <div class="editar-maquina-group">
+                        <label class="editar-maquina-group-text" for="estado-maquina">Estado:</label>
+                        <select class="editar-maquina-group-select" id="estado-maquina">
+                            <option>Disponible</option>
+                            <option>En mantenimiento</option>
+                            <option>Fuera de servicio</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Descripción -->
+                <div class="editar-maquina-group">
+                    <label class="editar-maquina-group-text" for="descripcion-maquina">Descripción:</label>
+                    <textarea class="editar-maquina-group-textarea" id="descripcion-maquina" rows="4">Equipo para fortalecimiento de tren inferior, con plataforma ajustable y sistema de rieles de alta resistencia. Ideal para rutinas de fuerza y volumen muscular.</textarea>
+                </div>
+            </section>
+        </div>
+
+        <!-- Acciones -->
+        <div class="editar-maquina-acciones">
+
+            <form action="maquinas_ins.html">
+                <button class="editar-btn-eliminar"><i class="fa-solid fa-trash"></i> Eliminar Máquina</button>
+                <button class="editar-btn-cancelar"><i class="fa-solid fa-xmark"></i> Cancelar</button>
+                <button class="editar-btn-guardar"><i class="fa-solid fa-check"></i> Guardar Cambios</button>
+            </form>
+        </div>
+    </main>
+
+
+
+
+
+</body>
+
+</html>
